@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
-
+import { Link } from 'react-router-dom';
 const API_URL = import.meta.env.VITE_API_URL || 'https://todo-mern-2-evqm.onrender.com/api';
 
 const SignInPage = () => {
@@ -67,7 +67,7 @@ const SignInPage = () => {
         {error && <div className="text-red-600 font-semibold text-center">{error}</div>}
         <button type="submit" disabled={loading} className="px-8 py-3 bg-primary text-white font-anime text-lg rounded-brutal border-2 border-secondary shadow-brutal hover:bg-secondary hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary transition-colors duration-150 disabled:opacity-60 disabled:cursor-not-allowed">{loading ? 'Signing In...' : 'Sign In'}</button>
         <div className="text-center text-gray-600 mt-2">
-          Don&apos;t have an account? <a href="/signup" className="text-primary underline font-semibold">Sign Up</a>
+          Don&apos;t have an account? <Link to="/signup" className="text-primary underline font-semibold">Sign Up</Link>
         </div>
       </form>
     </section>
