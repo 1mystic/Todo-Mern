@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const features = [
   {
     icon: '📝',
@@ -22,7 +24,9 @@ const HomePage = () => (
     <div className="bg-white border-4 border-primary rounded-xl shadow-brutal p-12 max-w-2xl w-full text-center mb-12 animate-fade-in">
       <h1 className="text-5xl font-anime text-primary mb-4 drop-shadow">Mood Todo</h1>
       <p className="text-xl text-secondary font-semibold mb-8">Productivity meets emotion. Organize your life, track your moods, and express yourself.</p>
-      <a href="/tasks" className="inline-block px-10 py-4 bg-primary text-white font-anime text-2xl rounded-brutal border-2 border-secondary shadow-brutal hover:bg-secondary hover:text-primary transition-colors duration-150">Get Started</a>
+       <Link to="/signin" className="inline-block px-10 py-4 bg-primary text-white font-anime text-2xl rounded-brutal border-2 border-secondary shadow-brutal hover:bg-secondary hover:text-primary transition-colors duration-150">
+  Get Started
+</Link>
     </div>
     {/* Features Section */}
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-4xl">
