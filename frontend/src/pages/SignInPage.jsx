@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../contexts/AuthContext';
 
 const API_URL = import.meta.env.VITE_API_URL || 'https://todo-mern-2-evqm.onrender.com/api';
 
@@ -8,6 +9,7 @@ const SignInPage = () => {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const { login } = useAuth(); // <-- This must be inside the component
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -30,7 +32,7 @@ const SignInPage = () => {
       if (!res.ok) {
         setError(data.message || 'Login failed.');
       } else {
-        localStorage.setItem('token', data.token);
+        login(data.token); // Use context to update auth state
         navigate('/tasks');
       }
     } catch (err) {
@@ -72,4 +74,4 @@ const SignInPage = () => {
   );
 };
 
-export default SignInPage; 
+export default SignInPage;
