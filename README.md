@@ -26,15 +26,15 @@ A full-stack, mood-based todo app built with the MERN stack. Organize your tasks
 
 ### 1. Clone the repo
 ```bash
-git clone https://github.com/yourusername/mood-todo.git
-cd mood-todo
+git clone https://github.com/1mystic/Todo-Mern.git
+cd Todo-Mern
 ```
 
 ### 2. Backend Setup
 ```bash
 cd backend
 npm install
-cp .env.example .env # Fill in your MongoDB URI and JWT secret
+touch .env # Fill in your MongoDB URI and JWT secret
 npm start
 ```
 
@@ -45,7 +45,7 @@ npm install
 npm run dev
 ```
 
-- The backend runs on `http://localhost:5000`
+- The backend runs on `http://localhost:3000`
 - The frontend runs on `http://localhost:5173`
 
 ## Deployment
