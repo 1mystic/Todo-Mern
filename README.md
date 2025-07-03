@@ -4,7 +4,7 @@
 
 - **Frontend:** [https://todo-mern-green.vercel.app/](https://todo-mern-green.vercel.app/)
 - **Backend API:** [https://todo-mern-2-evqm.onrender.com](https://todo-mern-2-evqm.onrender.com/)
-- **Demo Video:** [Watch the project demo here](https://www.loom.com/share/3a07d6bf454c4c4faf4ef543aec60b22?sid=68b58988-b0b2-4ea0-b5ee-bb216c69c0d5)
+- **Demo Video:** [Watch the project demo here](https://youtu.be/70sW1oFAijw)
 
 A full-stack, mood-based todo app built with the MERN stack. Organize your tasks, track your moods, and boost your productivity with a unique, anime-inspired brutalist UI.
 
